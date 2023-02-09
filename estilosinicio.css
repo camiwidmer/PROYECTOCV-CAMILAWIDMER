@@ -1,0 +1,144 @@
+/** Estilos de la seccion inicio*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 80px;
+}
+
+.vertical-padding{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.horizontal-padding{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.perfil-info1,
+.perfil-info2 {
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.perfil-img {
+   width: 250px;
+   max-width: 250px;
+   border-radius:170px;
+   margin: 25px 0 0 0;
+}
+
+.perfil{
+    text-align: center;
+}
+
+.perfil-nombre{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+.perfil-nombre2{
+    padding: 18px 0;
+    margin: auto;
+}
+
+.separado {
+    color: black;
+    border-bottom: 3px solid; 
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-titulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3em;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+.perfil-desc {
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+.perfil-btn{
+    font-family: 'Raleway', sans-serif;
+    background-color: #76323f;
+    color: white;
+    font-size: 18px;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 5px 5px gray;
+    margin: 20px;
+}
+
+.perfil-btn:hover{
+    filter: brightness(130%);
+}
+
+
+/** Estilos de la seccion inicio en compus*/
+@media (min-width: 950px){
+
+    .vertical-padding{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .horizontal-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .perfil-img {
+       width: 250px;
+       max-width: 250px;
+       border-radius:170px;
+       margin: 25px 0 0 0;
+      
+    }
+    
+    .perfil{
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+    
+    .perfil-nombre{
+        font-size: 35px;
+    }
+    
+    .perfil-titulo{
+        font-size: 90px;
+    }
+    
+    .perfil-desc {
+        font-size: 30px;
+        font-weight: 100;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .perfil-btn{
+        font-size: 25px;
+    }
+}
+

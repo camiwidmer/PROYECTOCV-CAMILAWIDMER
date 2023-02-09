@@ -1,0 +1,87 @@
+
+.proyectos{
+    background-color: white;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 30px;
+    text-align: center;
+}
+
+.proyectos-body{
+    background-color: #DDCFBE;
+    padding: 15px;
+}
+
+.wave{
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.wave-abajo{
+    width: 100%;
+    top: -3px;
+}
+
+.proyectos-titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: lato,sans-serif;
+    font-size: 35px;
+    margin: 35px;
+}
+
+.proyectos-tx{
+    color: #76323f;
+    font-family: lato,sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.proyectos-pr{
+    font-size: 18px;
+    margin: 25px auto;
+    text-align: justify;
+    max-width: 450px;
+}
+
+.proy-img{
+    width: 100%;
+    max-width: 450px;
+}
+
+/** Estilos de la barra de navegacion en compu*/
+
+@media (min-width: 950px) {
+    .proyectos{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        max-width: 1024px;
+        margin: 50px auto;
+        box-shadow: 7px 7px gray;
+    }
+
+    .proyectos-textos{
+        padding: 35px;
+    }
+    
+    .proyectos-titulo{
+        font-size: 50px;
+        margin: 35px;
+    }
+    
+    .proyectos-tx{
+        font-size: 30px;
+    }
+    
+    .proyectos-pr{
+        font-size: 21px;
+        max-width: 450px;
+    }
+    
+    .proy-img{
+        max-width: 450px;
+    }
+}

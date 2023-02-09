@@ -1,0 +1,142 @@
+
+.contacto{
+    background-color: #763240;
+    color: white;
+    font-size: 18px;
+    border-radius: 42px;
+    padding: 25px;
+    
+    display: grid;
+    gap: 25px;
+}
+
+.contacto p,
+.contacto h2,
+.contacto ul {
+    margin:0;
+    padding: 0;
+}
+
+.contacto-titulo{
+    font-family: lato, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacto-detalles,
+.contacto-form {
+    display: grid;
+    gap: 20px;
+}
+
+.contacto-detalles-grupo,
+.contacto-form-grupo{
+    display: grid;
+    gap: 3px;
+}
+
+.contacto-grid{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.contacto-form textarea {
+    height: auto;
+    resize: vertical;
+}
+
+.contacto-btn{
+    width: 100%;
+    height: 40px;
+    background-color: #DDCFBE;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    font-family: raleway, sans-serif;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.contacto-btn:hover{
+    filter: drop-shadow(0 0 0.75rem #C4A59D);
+}
+
+.contacto-rrss {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.fa-brands{
+    color: white;
+    font-size: 30px;
+}
+
+.fa-brands:hover {
+    filter: invert(100%);
+}
+
+/*Estilos para compu */ 
+
+@media (min-width: 950px){
+    .contacto{
+        font-size: 20px;
+        padding: 70px;
+        max-width: 980px;
+        margin: 0 auto;
+
+        box-sizing: border-box;
+    }
+    
+    .contacto-titulo{
+        font-size: 50px;
+        text-align: left;
+    }
+    
+    .contacto-rrss {
+        justify-content: flex-start;
+    }
+    
+    .fa-brands{
+        font-size: 35px;
+    }
+
+
+    .contacto-titulo{
+        grid-area: titulo;
+    }
+    
+    .contacto-detalles{
+        grid-area: detalles;
+    }
+    
+    .contacto-form{
+        grid-area: form;
+    }
+    
+    .rrss{
+        grid-area: rrss;
+    }
+
+    .contacto{
+        grid: 
+            "titulo   form" auto
+            "detalles form" auto
+            "rrss     form" auto /
+            1fr 1fr;
+    }
+}
+
+
+
