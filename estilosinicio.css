@@ -19,21 +19,28 @@ section[id]{
 }
 
 .perfil-info1,
-.perfil-info2 {
-    margin-top: 20px;
+.perfil-info2{
+    margin-top: 40px;
     font-family: 'Raleway', sans-serif;
 }
 
+.perfil-info0{
+    margin-bottom: 40px;
+}
 
 .perfil-img {
    width: 250px;
-   max-width: 250px;
+   max-width: auto;
    border-radius:170px;
    margin: 25px 0 0 0;
 }
 
 .perfil{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .perfil-nombre{
@@ -53,13 +60,11 @@ section[id]{
     color: black;
     border-bottom: 3px solid; 
     padding-bottom: 20px;
-    align-items: center;
-    justify-content: center;
 }
 
 .perfil-titulo{
     font-family: 'Lato', sans-serif;
-    font-size: 2.3em;
+    font-size: 45px;
     font-weight: bolder;
     margin: 20px 0;
 }
@@ -84,6 +89,7 @@ section[id]{
     border: none;
     box-shadow: 5px 5px gray;
     margin: 20px;
+    text-decoration: none;
 }
 
 .perfil-btn:hover{
@@ -115,6 +121,7 @@ section[id]{
     .perfil{
         text-align: right;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         max-width: 980px;
         margin: 0 auto;

@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Proyecto CV - Camila Widmer</title>
+    <meta property="og:title" content="Proyecto Curriculum Vitae" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://proyectocv-camilawidmer.netlify.app/" />
+    <meta property="og:image" content="https://randomuser.me/api/portraits/women/79.jpg" />
+    <meta property="og:description" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequatur cumque expedita debitis dolorum accusantium tenetur porro vitae quasi vero!"/>
+    
     <link rel="icon" type="image/png" href="favicon.png">
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilosinicio.css">
     <link rel="stylesheet" href="estiloexp.css">
@@ -21,14 +28,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
 
-
     <script src="https://kit.fontawesome.com/fbe12d91d3.js" crossorigin="anonymous"></script>
-    <script defer src="index.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#" class="nombre nav-link">Misty Williams</a>
+            <a href="#" class="nombre nav-link">Misty Williams / Científica</a>
             <button class="nav-btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -45,15 +50,17 @@
     <div class="horizontal-padding vertical-padding">
         <section class="perfil" id="inicio">
             <div class="perfil-info1">
-                <div>
-                    <img src="https://randomuser.me/api/portraits/women/79.jpg" class="perfil-img" alt="Imagen de perfil de Misty Williams">
+                <div class="perfil-info0">
+                    <div>
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="perfil-img" alt="Imagen de perfil de Misty Williams">
+                    </div>
+                    <h2 class="perfil-nombre2">
+                        <span class="perfil-nombre separado">Misty Williams</span>
+                    </h2>
                 </div>
-                <h2 class="perfil-nombre2">
-                    <span class="perfil-nombre separado">Misty Williams</span>
-                </h2>
-                <button class="perfil-btn">
-                    Descargar CV
-                </button>
+                <a class="perfil-btn" href="cv-mistywilliams.pdf" download
+                    >Descargar CV 
+                </a>
             </div>
             <div class="perfil-info2">
                 <h1 class="perfil-titulo">¡BIENVENIDO!</h1>
@@ -185,7 +192,7 @@
                     <p class="contacto-texto">(205)845-6452</p>
                 </div>
             </div>
-            <form class="contacto-form">
+            <form class="contacto-form" name="contacto" netlify>
                 <div class="contacto-form-grupo">
                     <label for="mail">Email</label>
                     <input required type="email" name="mail" id="mail">
