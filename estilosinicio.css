@@ -20,7 +20,8 @@ section[id]{
 
 .perfil-info1,
 .perfil-info2{
-    margin-top: 40px;
+    margin: 0 auto;
+    max-width: 100%;
     font-family: 'Raleway', sans-serif;
 }
 
