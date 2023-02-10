@@ -56,14 +56,14 @@
     margin-top: 15px;
 }
 
-/** Estilos en compu*/
+/** Estilos para compu*/
 
 @media (min-width: 950px) {
 
     .experiencia-grid{
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: 100px 100px 100px;
+        grid-template-rows: 100px 0px 0px;
         gap: 130px;
         text-align: justify;
         max-width: 1200px;

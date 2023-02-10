@@ -22,6 +22,7 @@
     border-radius: 42px;
     padding: 0.5em 0.7em;
     margin: 10px;
+    text-align: center;
 }
 
 .hab-lista{
@@ -31,7 +32,8 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-/** Estilos de la seccion inicio en compus*/
+/** Estilos para compus*/
+
 @media(min-width:950px){
     .hab-titulo{
         font-size: 50px;
